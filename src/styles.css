@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item h3, .task-item p {
+  margin: 0;
+}
+
+.task-item.completed {
+  background-color: #d4edda;
+}
+
+.task-item.not-completed {
+  background-color: #f8d7da;
+}
+
+.task-item button {
+  margin-right: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.task-item button .fa {
+  margin-right: 5px;
+}
+
+.task-item .delete {
+  color: red;
+}
+
+.task-item .edit-btn {
+  color: #007bff;
+}
+
+.task-item .complete-btn.completed {
+  color: green;
+}
+
+.task-item .complete-btn.not-completed {
+  color: red;
+}
